@@ -1,0 +1,8 @@
+{
+  "name": "מערכת יבוא משקפיים",
+  "short_name": "יבוא",
+  "display": "standalone",
+  "start_url": "index.html",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a"
+}
