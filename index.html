@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0f172a">
+    <title>מערכת ניהול יבוא ומשקפי שמש</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">ש</div>
+          <div>
+            <h1>ניהול יבוא וסיטונאות משקפי שמש</h1>
+            <p>מערכת בסיס נקייה לניהול יומי, מלאי, מכירות ורווחיות</p>
+          </div>
+        </div>
+      </header>
+
+      <nav class="tabs" aria-label="ניווט ראשי">
+        <button class="tab-button active" type="button" data-tab="dashboard">דשבורד ראשי</button>
+        <button class="tab-button" type="button" data-tab="imports">יבוא ועלויות</button>
+        <button class="tab-button" type="button" data-tab="inventory">מוצרים ומלאי</button>
+        <button class="tab-button" type="button" data-tab="pricing">סימולטור תמחור</button>
+        <button class="tab-button" type="button" data-tab="customers">לקוחות</button>
+        <button class="tab-button" type="button" data-tab="sales">מכירות</button>
+        <button class="tab-button" type="button" data-tab="payments">תשלומים</button>
+        <button class="tab-button" type="button" data-tab="settings">הגדרות וגיבוי</button>
+      </nav>
+
+      <main class="content" id="appContent" aria-live="polite"></main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <input class="file-input" id="importFileInput" type="file" accept="application/json" aria-hidden="true" tabindex="-1">
+
+    <script src="app.js"></script>
+    <script src="pwa.js"></script>
+  </body>
+</html>
